@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <style type="text/css">
+/*
+   * 
+   {
+       border:1px solid red; //render all elements!
+   }
+*/
+
+    </style>
+</head>
+<body>
+<div id="container">
+<h1>Crystals Collection Game</h1>
+<div id="description">
+<p>Click the crystals below to add them to your collection. To win the game, you must match the collection goal without going over...</p>
+</div>
+<hr>
+<h2>Collection Value Goal: <span id="number-to-guess"></span></h2>
+
+<hr>
+<div id="continue" style="display:none;">
+        <!-- click to continue playing -->
+        <img class="" src="assets/images/Amethyst_150x150.jpg" alt="Click Me">
+        <img class="" src="assets/images/Emerald_150x150.jpg" alt="Click Me">
+        <img class="" src="assets/images/Ruby_150x150.jpg" alt="Click Me">
+        <img class="" src="assets/images/Topaz_150x150.jpg" alt="Click Me">
+</div>
+<div id="crystals" style="display:block;">
+        <img points="3" class="crystal-image" src="assets/images/Amethyst_150x150.jpg" alt="Click Me">
+        <img points="12" class="crystal-image" src="assets/images/Emerald_150x150.jpg" alt="Click Me">
+        <img points="1" class="crystal-image" src="assets/images/Ruby_150x150.jpg" alt="Click Me">
+        <img points="7" class="crystal-image" src="assets/images/Topaz_150x150.jpg" alt="Click Me">
+</div>
+<hr>
+<h2>Your Collection's Value: <span id="your-total-score">0</span></h2>
+<hr>
+<h2 style="display:inline-block;">Wins: <span id="your-wins">0</span></h2>&nbsp;|&nbsp;
+<h2 style="display:inline-block;">Losses: <span id="your-losses">0</span></h2>
+<hr>
+</div>
+
+  
+</body>
+</html>
